@@ -1,0 +1,127 @@
+@import "variables";
+
+.main{
+    .container_publications{
+        display: block;
+        .item{
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          width: 95%;
+          margin-bottom: 10px;
+            .item__image{
+                max-width: 100%;
+                border-radius: $main-border-radius;
+            }
+            .item__avatar{
+                border-radius: 70px; 
+                border: 1px solid black;   
+                max-width: 40px;
+                position: absolute;
+                bottom: 8px; 
+                left: 4px;                 
+            }
+            .item__hashtag{
+              padding: 18px;
+            }
+            .navigation-block{
+                display: none;
+                cursor: pointer;
+                position: absolute;
+                font-weight: 700;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                bottom: 20%;
+                left: 85%;
+                .menu{
+                    display: none;
+                    border: $main-border;
+                    bottom: 85px;
+                    right: 120px;
+                    position: relative;
+                    z-index: 3;
+                    background: rgb(204, 202, 202);
+                    border-radius: 5px;
+                    width: 150px;
+                    height: 100px;
+                    .menu__button{
+                        color: white;
+                        padding: 5px;
+                        border-radius: 10px;
+                        margin: 10px 0px;
+                        background: red;
+                    }
+                    .board-block{
+                        position: absolute;
+                        bottom: 0px;
+                        padding: 5px;
+                        display: none;
+                        background: rgb(204, 202, 202);
+                        border: $main-border;
+                        border-radius: 5px;
+                        .board-block__option{
+                            width: 100%;
+                            color: white;
+                            padding: 5px;
+                            border-radius: 10px;
+                            margin: 5px 0px;
+                            background: red;
+                        }
+                    }
+                    .report-block{
+                        border: $main-border;
+                        padding: 5px;
+                        bottom: 100px;
+                        position: relative;
+                        background: rgb(204, 202, 202);
+                        display: none;
+                        border-radius: 5px;
+                        .report-block__option{
+                            width: 100%;
+                            color: white;
+                            padding: 5px;
+                            border-radius: 10px;
+                            margin: 5px 0px;
+                            background: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    .main{
+        .container_publications{
+            display: flex;
+            .item{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1100px){
+    .main{
+        .container_publications{
+            .item{
+                width: 19%;
+            }
+        }
+    }
+}
+
+// .main{
+//     .container_publications{
+//         .item{
+//             .item__image{  
+//             }
+//             .item__avatar{
+//             }
+//             .item__hashtag{
+//             }
+//         }
+//     }
+// }

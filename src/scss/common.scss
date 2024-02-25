@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px 0px;
+    font-family: "Open-sans", sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+}
