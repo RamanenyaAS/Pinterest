@@ -75,11 +75,13 @@ async function showPicture() {
     create(data);
 }
 
-function create(tableData) {
-    const main = createElement("main", "main", root, "");
-    const container = createElement("div", "container", main, "");
-    container.classList.add("container_publications")
+// вынес из функции Create, чтобы при выборе доски не создавало пустые мейны
+const main = createElement("main", "main", root, "");
+const container = createElement("div", "container", main, "");
+container.classList.add("container_publications")
 
+
+function create(tableData) {
     // Сначала скрываем все существующие посты
     document.querySelectorAll('.item').forEach(item => {
         item.style.display = 'none';
