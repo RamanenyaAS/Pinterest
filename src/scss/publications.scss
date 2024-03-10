@@ -46,6 +46,7 @@
                     width: 150px;
                     height: 100px;
                     .menu__button{
+                        cursor: pointer;
                         color: white;
                         padding: 5px;
                         border-radius: 10px;
@@ -61,6 +62,7 @@
                         border: $main-border;
                         border-radius: 5px;
                         .board-block__option{
+                            cursor: pointer;
                             width: 100%;
                             color: white;
                             padding: 5px;
@@ -78,6 +80,7 @@
                         display: none;
                         border-radius: 5px;
                         .report-block__option{
+                            cursor: pointer;
                             width: 100%;
                             color: white;
                             padding: 5px;
