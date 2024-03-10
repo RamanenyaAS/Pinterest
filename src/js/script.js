@@ -172,6 +172,7 @@ function create(tableData) {
                 if (currentData.some(item => item.id === pictureElement.dataset.itemId)) {
                     alert("Фото уже добавлено в ваш каталог");
                 } else {
+                    alert("Фото добавлено на первую доску");
                     currentData.push(item); // Добавляем новый пост в текущие данные
                     setFirstTable(currentData);
                 }
@@ -181,6 +182,7 @@ function create(tableData) {
                 if (currentData.some(item => item.id === pictureElement.dataset.itemId)) {
                     alert("Фото уже добавлено в ваш каталог");
                 } else {
+                    alert("Фото добавлено на вторую доску");
                     currentData.push(item);
                     setSecondTable(currentData);
                 }
@@ -190,8 +192,10 @@ function create(tableData) {
                 if (currentData.some(item => item.id === pictureElement.dataset.itemId)) {
                     alert("Фото уже добавлено в ваш каталог");
                 } else {
-                currentData.push(item); // Добавляем новый пост в текущие данные
-                setThirdTable(currentData);}
+                    alert("Фото добавлено на третью доску");
+                    currentData.push(item); // Добавляем новый пост в текущие данные
+                    setThirdTable(currentData);
+                }
             })
         } else {
             pictureElement.style.display = 'block'; // Показываем существующий пост
